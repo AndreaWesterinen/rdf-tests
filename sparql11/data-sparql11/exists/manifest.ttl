@@ -24,9 +24,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_2> ;
     mf:action
-         [ qt:query  <exists01.rq> ;
-           qt:data   <exists01.ttl> ] ;
-    mf:result  <exists01.srx>
+         [ qt:query  :exists01.rq ;
+           qt:data   :exists01.ttl ] ;
+    mf:result  :exists01.srx
     .
     
     
@@ -36,9 +36,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_2> ;
     mf:action
-         [ qt:query  <exists02.rq> ;
-           qt:data   <exists01.ttl> ] ;
-    mf:result  <exists02.srx>  
+         [ qt:query  :exists02.rq ;
+           qt:data   :exists01.ttl ] ;
+    mf:result  :exists02.srx  
     .
     
 :exists03 rdf:type mf:QueryEvaluationTest ;
@@ -48,11 +48,11 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_2> ;
     mf:action
-         [ qt:query  <exists03.rq> ;
-           qt:data   <exists01.ttl> ;
-           qt:graphData   <exists02.ttl> 
+         [ qt:query  :exists03.rq ;
+           qt:data   :exists01.ttl ;
+           qt:graphData   :exists02.ttl 
           ] ;
-    mf:result  <exists03.srx>  
+    mf:result  :exists03.srx  
     .    
    
     
@@ -62,10 +62,10 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_2> ;
     mf:action
-         [ qt:query  <exists04.rq> ;
-           qt:data   <exists01.ttl> ;
+         [ qt:query  :exists04.rq ;
+           qt:data   :exists01.ttl ;
           ] ;
-    mf:result  <exists04.srx>  
+    mf:result  :exists04.srx  
     .       
     
 :exists05 rdf:type mf:QueryEvaluationTest ;
@@ -74,9 +74,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_2> ;
     mf:action
-         [ qt:query  <exists05.rq> ;
-           qt:data   <exists01.ttl> ;
+         [ qt:query  :exists05.rq ;
+           qt:data   :exists01.ttl ;
           ] ;
-    mf:result  <exists05.srx>  
+    mf:result  :exists05.srx  
     .           
     

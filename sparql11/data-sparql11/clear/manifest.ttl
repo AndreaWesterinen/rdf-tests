@@ -23,18 +23,18 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <clear-default-01.ru> ; 
-                ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <clear-g1.ttl> ;
+    			ut:request :clear-default-01.ru ; 
+                ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :clear-g1.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     mf:result [
-                ut:data <empty.ttl> ;
-                ut:graphData [ ut:graph <clear-g1.ttl> ;
+                ut:data :empty.ttl ;
+                ut:graphData [ ut:graph :clear-g1.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     .
@@ -45,18 +45,18 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <clear-graph-01.ru> ; 
-                ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <clear-g1.ttl> ;
+    			ut:request :clear-graph-01.ru ; 
+                ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :clear-g1.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     mf:result [
-    			ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <empty.ttl> ;
+    			ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :empty.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     .
@@ -67,18 +67,18 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <clear-named-01.ru> ; 
-                ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <clear-g1.ttl> ;
+    			ut:request :clear-named-01.ru ; 
+                ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :clear-g1.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     mf:result [
-    			ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <empty.ttl> ;
+    			ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :empty.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <empty.ttl> ;
+                ut:graphData [ ut:graph :empty.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     .
@@ -89,18 +89,18 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <clear-all-01.ru> ; 
-                ut:data <clear-default.ttl> ;
-                ut:graphData [ ut:graph <clear-g1.ttl> ;
+    			ut:request :clear-all-01.ru ; 
+                ut:data :clear-default.ttl ;
+                ut:graphData [ ut:graph :clear-g1.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <clear-g2.ttl> ;
+                ut:graphData [ ut:graph :clear-g2.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     mf:result [
-    			ut:data <empty.ttl> ;
-                ut:graphData [ ut:graph <empty.ttl> ;
+    			ut:data :empty.ttl ;
+                ut:graphData [ ut:graph :empty.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <empty.ttl> ;
+                ut:graphData [ ut:graph :empty.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     .

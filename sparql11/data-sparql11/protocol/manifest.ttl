@@ -65,7 +65,7 @@
 
     true
        """ ;
-        mf:action 	<query_post_form.jmx>  ;
+        mf:action 	:query_post_form.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        dawgt:approval dawgt:ApprovedMustToHave ;
@@ -90,7 +90,7 @@
 
     true
        """ ;
-        #mf:action 	<query_dataset_default_graphs_get.jmx>  ;
+        #mf:action 	:query_dataset_default_graphs_get.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -106,7 +106,7 @@
     Content-Type: application/sparql-query
     Content-Length: XXX
 
-    ASK { <http://kasei.us/2009/09/sparql/data/data1.rdf> ?p ?o . <http://kasei.us/2009/09/sparql/data/data2.rdf> ?p ?o }
+    ASK { :http://kasei.us/2009/09/sparql/data/data1.rdf ?p ?o . :http://kasei.us/2009/09/sparql/data/data2.rdf ?p ?o }
 
 #### Response
 
@@ -115,7 +115,7 @@
 
     true
        """ ;
-        #mf:action 	<query_dataset_default_graphs_post.jmx>  ;
+        #mf:action 	:query_dataset_default_graphs_post.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -140,7 +140,7 @@
 
     true
        """ ;
-        #mf:action 	<query_dataset_named_graphs_post.jmx>  ;
+        #mf:action 	:query_dataset_named_graphs_post.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -161,7 +161,7 @@
 
     true
        """ ;
-        #mf:action 	<query_dataset_named_graphs_get.jmx>  ;
+        #mf:action 	:query_dataset_named_graphs_get.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -186,7 +186,7 @@
 
     Contains SPARQL results for variables g x s
        """ ;
-        #mf:action 	<query_dataset_full.jmx>  ;
+        #mf:action 	:query_dataset_full.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -202,7 +202,7 @@
     Content-Type: application/sparql-query
     Content-Length: XXX
 
-    ASK FROM <http://kasei.us/2009/09/sparql/data/data1.rdf> { <data1.rdf> ?p ?o }
+    ASK FROM :http://kasei.us/2009/09/sparql/data/data1.rdf { :data1.rdf ?p ?o }
 
 #### Response
 
@@ -211,7 +211,7 @@
 
     true
        """ ;
-        #mf:action 	<query_multiple_dataset.jmx>  ;
+        #mf:action 	:query_multiple_dataset.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -230,7 +230,7 @@
 
     true
        """ ;
-        mf:action 	<query_get.jmx>  ;
+        mf:action 	:query_get.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        dawgt:approval dawgt:ApprovedMustToHave ;
@@ -254,7 +254,7 @@
     2xx or 3xx response
     Content-Type: application/sparql-results+xml, application/sparql-results+json, text/tab-separated-values, or text/csv
        """ ;
-        #mf:action 	<query_content_type_select.jmx>  ;
+        #mf:action 	:query_content_type_select.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -277,7 +277,7 @@
     2xx or 3xx response
     Content-Type: application/sparql-results+xml or application/sparql-results+json
        """ ;
-        #mf:action 	<query_content_type_ask.jmx>  ;
+        #mf:action 	:query_content_type_ask.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -300,7 +300,7 @@
     2xx or 3xx response
     Content-Type: application/rdf+xml, application/rdf+json or text/turtle
        """ ;
-        #mf:action 	<query_content_type_describe.jmx>  ;
+        #mf:action 	:query_content_type_describe.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -323,7 +323,7 @@
     2xx or 3xx response
     Content-Type: application/rdf+xml, application/rdf+json or text/turtle
        """ ;
-        #mf:action 	<query_content_type_construct.jmx>  ;
+        #mf:action 	:query_content_type_construct.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -343,8 +343,8 @@
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf {
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document
         }
     } ;
     INSERT {
@@ -373,7 +373,7 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource>
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource
         }
     }
 
@@ -384,7 +384,7 @@ followed by
 
     true
        """ ;
-        #mf:action 	<update_dataset_default_graph.jmx>  ;
+        #mf:action 	:update_dataset_default_graph.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -404,9 +404,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
@@ -434,12 +434,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf a :http://purl.org/dc/terms/BibliographicResource .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+                :http://kasei.us/2009/09/sparql/data/data3.rdf a :http://purl.org/dc/terms/BibliographicResource .
             }
         }
     }
@@ -451,7 +451,7 @@ followed by
 
     true
        """ ;
-        #mf:action 	<update_dataset_default_graphs.jmx>  ;
+        #mf:action 	:update_dataset_default_graphs.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -471,9 +471,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
@@ -503,12 +503,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf a :http://purl.org/dc/terms/BibliographicResource .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+                :http://kasei.us/2009/09/sparql/data/data3.rdf a :http://purl.org/dc/terms/BibliographicResource .
             }
         }
     }
@@ -520,7 +520,7 @@ followed by
 
     true
        """ ;
-        #mf:action 	<update_dataset_named_graphs.jmx>  ;
+        #mf:action 	:update_dataset_named_graphs.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -540,9 +540,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-full-test/> {
@@ -578,12 +578,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-full-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> <http://example.org/in> "default" .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> <http://example.org/in> <http://kasei.us/2009/09/sparql/data/data2.rdf> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf :http://example.org/in "default" .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf :http://example.org/in :http://kasei.us/2009/09/sparql/data/data2.rdf .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-full-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> ?p ?o
+                :http://kasei.us/2009/09/sparql/data/data3.rdf ?p ?o
             }
         }
     }
@@ -595,7 +595,7 @@ followed by
 
     true
        """ ;
-        #mf:action 	<update_dataset_full.jmx>  ;
+        #mf:action 	:update_dataset_full.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -617,7 +617,7 @@ followed by
 
     2xx or 3xx response
        """ ;
-        mf:action 	<update_post_form.jmx>  ;
+        mf:action 	:update_post_form.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        dawgt:approval dawgt:ApprovedMustToHave ;
@@ -640,7 +640,7 @@ followed by
 
     2xx or 3xx response
        """ ;
-        #mf:action 	<update_post_direct.jmx>  ;
+        #mf:action 	:update_post_direct.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -685,7 +685,7 @@ followed by
 
     one result with `?o` bound to an IRI that is _not_ `<test>`
        """ ;
-        #mf:action 	<update_base_uri.jmx>  ;
+        #mf:action 	:update_base_uri.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -710,7 +710,7 @@ followed by
 
     true
        """ ;
-        #mf:action 	<query_post_direct.jmx>  ;
+        #mf:action 	:query_post_direct.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -726,7 +726,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_query_method.jmx>  ;
+        #mf:action 	:bad_query_method.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -742,7 +742,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_multiple_queries.jmx>  ;
+        #mf:action 	:bad_multiple_queries.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -764,7 +764,7 @@ followed by
 
     4xx
        """ ;
-        ##mf:action 	<bad_query_wrong_media_type.jmx>  ;
+        ##mf:action 	:bad_query_wrong_media_type.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -785,7 +785,7 @@ followed by
 
     4xx
        """ ;
-        ##mf:action 	<bad_query_missing_form_type.jmx>  ;
+        ##mf:action 	:bad_query_missing_form_type.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -806,7 +806,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_query_missing_direct_type.jmx>  ;
+        #mf:action 	:bad_query_missing_direct_type.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -830,7 +830,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_query_non_utf8.jmx>  ;
+        #mf:action 	:bad_query_non_utf8.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -846,7 +846,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_query_syntax.jmx>  ;
+        #mf:action 	:bad_query_syntax.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -862,7 +862,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_get.jmx>  ;
+        #mf:action 	:bad_update_get.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -884,7 +884,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_multiple_updates.jmx>  ;
+        #mf:action 	:bad_multiple_updates.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -906,7 +906,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_wrong_media_type.jmx>  ;
+        #mf:action 	:bad_update_wrong_media_type.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -927,7 +927,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_missing_form_type.jmx>  ;
+        #mf:action 	:bad_update_missing_form_type.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -951,7 +951,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_non_utf8.jmx>  ;
+        #mf:action 	:bad_update_non_utf8.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -973,7 +973,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_syntax.jmx>  ;
+        #mf:action 	:bad_update_syntax.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .
@@ -995,7 +995,7 @@ followed by
 
     4xx
        """ ;
-        #mf:action 	<bad_update_dataset_conflict.jmx>  ;
+        #mf:action 	:bad_update_dataset_conflict.jmx  ;
        dawgt:approval dawgt:Approved ;
        dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-11-20#resolution_3> ;
        .

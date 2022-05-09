@@ -45,9 +45,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp01.rq> ;
-           qt:data   <pp01.ttl> ] ;
-    mf:result  <pp01.srx>
+         [ qt:query  :pp01.rq ;
+           qt:data   :pp01.ttl ] ;
+    mf:result  :pp01.srx
     .
     
 :pp02 rdf:type mf:QueryEvaluationTest ;
@@ -55,9 +55,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp02.rq> ;
-           qt:data   <pp01.ttl> ] ;
-    mf:result  <pp02.srx>
+         [ qt:query  :pp02.rq ;
+           qt:data   :pp01.ttl ] ;
+    mf:result  :pp02.srx
     .
     
 :pp03 rdf:type mf:QueryEvaluationTest ;
@@ -65,9 +65,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp03.rq> ;
-           qt:data   <pp03.ttl> ] ;
-    mf:result  <pp03.srx>
+         [ qt:query  :pp03.rq ;
+           qt:data   :pp03.ttl ] ;
+    mf:result  :pp03.srx
     .   
     
 :pp06 rdf:type mf:QueryEvaluationTest ;
@@ -75,9 +75,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp06.rq> ;
-           qt:graphData   <pp061.ttl>,  <pp062.ttl>] ;
-    mf:result  <pp06.srx>
+         [ qt:query  :pp06.rq ;
+           qt:graphData   :pp061.ttl,  :pp062.ttl] ;
+    mf:result  :pp06.srx
     .   
         
 :pp07 rdf:type mf:QueryEvaluationTest ;
@@ -85,9 +85,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp06.rq> ;
-           qt:graphData   <pp07.ttl>] ;
-    mf:result  <pp07.srx> 
+         [ qt:query  :pp06.rq ;
+           qt:graphData   :pp07.ttl] ;
+    mf:result  :pp07.srx 
     .
     
 :pp08 rdf:type mf:QueryEvaluationTest ;
@@ -96,9 +96,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
    qt:queryForm qt:QueryAsk ;
    mf:action
-         [ qt:query  <pp08.rq> ;
-           qt:data   <pp08.ttl>] ;
-    mf:result  <pp08.srx> 
+         [ qt:query  :pp08.rq ;
+           qt:data   :pp08.ttl] ;
+    mf:result  :pp08.srx 
     .   
     
 :pp09 rdf:type mf:QueryEvaluationTest ;
@@ -106,9 +106,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
    mf:action
-         [ qt:query  <pp09.rq> ;
-           qt:data   <pp09.ttl>] ;
-    mf:result  <pp09.srx> 
+         [ qt:query  :pp09.rq ;
+           qt:data   :pp09.ttl] ;
+    mf:result  :pp09.srx 
     .  
     
 :pp10 rdf:type mf:QueryEvaluationTest ;
@@ -116,9 +116,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp10.rq> ;
-           qt:data   <pp10.ttl>] ;
-    mf:result  <pp10.srx> 
+         [ qt:query  :pp10.rq ;
+           qt:data   :pp10.ttl] ;
+    mf:result  :pp10.srx 
     .  
     
 :pp11 rdf:type mf:QueryEvaluationTest ;
@@ -126,9 +126,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp11.rq> ;
-           qt:data   <pp11.ttl>] ;
-    mf:result  <pp11.srx> 
+         [ qt:query  :pp11.rq ;
+           qt:data   :pp11.ttl] ;
+    mf:result  :pp11.srx 
     .         
     
 :pp12 rdf:type mf:QueryEvaluationTest ;
@@ -136,9 +136,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:action
-         [ qt:query  <pp12.rq> ;
-           qt:data   <pp11.ttl>] ;
-    mf:result  <pp12.srx> 
+         [ qt:query  :pp12.rq ;
+           qt:data   :pp11.ttl] ;
+    mf:result  :pp12.srx 
     .
 
 :pp14 rdf:type mf:QueryEvaluationTest ;
@@ -146,9 +146,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
-         [ qt:query  <pp14.rq> ;
-           qt:data   <pp14.ttl>] ;
-    mf:result  <pp14.srx> 
+         [ qt:query  :pp14.rq ;
+           qt:data   :pp14.ttl] ;
+    mf:result  :pp14.srx 
     .
 
 :pp16 rdf:type mf:QueryEvaluationTest ;
@@ -156,9 +156,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:action
-         [ qt:query  <pp14.rq> ;
-           qt:data   <pp16.ttl>] ;
-    mf:result  <pp16.srx> 
+         [ qt:query  :pp14.rq ;
+           qt:data   :pp16.ttl] ;
+    mf:result  :pp16.srx 
     .
 
 :pp21 rdf:type mf:QueryEvaluationTest ;
@@ -166,9 +166,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:name    "(pp21) Diamond -- :p+" ;
     mf:action
-        [ qt:query  <path-2-2.rq> ;
-          qt:data   <data-diamond.ttl> ] ;
-    mf:result  <diamond-2.srx>
+        [ qt:query  :path-2-2.rq ;
+          qt:data   :data-diamond.ttl ] ;
+    mf:result  :diamond-2.srx
     .
 
 :pp23  rdf:type mf:QueryEvaluationTest ;
@@ -176,9 +176,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:name    "(pp23) Diamond, with tail -- :p+" ;
     mf:action
-        [ qt:query  <path-2-2.rq> ;
-          qt:data   <data-diamond-tail.ttl> ] ;
-    mf:result  <diamond-tail-2.srx>
+        [ qt:query  :path-2-2.rq ;
+          qt:data   :data-diamond-tail.ttl ] ;
+    mf:result  :diamond-tail-2.srx
     .
 
 :pp25  rdf:type mf:QueryEvaluationTest ;
@@ -186,9 +186,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:name    "(pp25) Diamond, with loop -- :p+" ;
     mf:action
-        [ qt:query  <path-2-2.rq> ;
-          qt:data   <data-diamond-loop.ttl> ] ;
-    mf:result  <diamond-loop-2.srx>
+        [ qt:query  :path-2-2.rq ;
+          qt:data   :data-diamond-loop.ttl ] ;
+    mf:result  :diamond-loop-2.srx
     .
 
 :pp28a  rdf:type mf:QueryEvaluationTest ;
@@ -196,9 +196,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-        [ qt:query  <path-3-3.rq> ;
-          qt:data   <data-diamond-loop.ttl> ] ;
-    mf:result  <diamond-loop-5a.srx>
+        [ qt:query  :path-3-3.rq ;
+          qt:data   :data-diamond-loop.ttl ] ;
+    mf:result  :diamond-loop-5a.srx
      .
 
 :pp30  rdf:type mf:QueryEvaluationTest ;
@@ -206,9 +206,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:name    "(pp30) Operator precedence 1" ;
     mf:action
-        [ qt:query  <path-p1.rq> ;
-          qt:data   <path-p1.ttl> ] ;
-    mf:result  <path-p1.srx>
+        [ qt:query  :path-p1.rq ;
+          qt:data   :path-p1.ttl ] ;
+    mf:result  :path-p1.srx
     .
 
 :pp31  rdf:type mf:QueryEvaluationTest ;
@@ -216,9 +216,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:name    "(pp31) Operator precedence 2" ;
     mf:action
-        [ qt:query  <path-p2.rq> ;
-          qt:data   <path-p1.ttl> ] ;
-    mf:result  <path-p2.srx>
+        [ qt:query  :path-p2.rq ;
+          qt:data   :path-p1.ttl ] ;
+    mf:result  :path-p2.srx
     .
 
 :pp32  rdf:type mf:QueryEvaluationTest ;
@@ -226,9 +226,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:name    "(pp32) Operator precedence 3" ;
     mf:action
-        [ qt:query  <path-p3.rq> ;
-          qt:data   <path-p3.ttl> ] ;
-    mf:result  <path-p3.srx>
+        [ qt:query  :path-p3.rq ;
+          qt:data   :path-p3.ttl ] ;
+    mf:result  :path-p3.srx
     .
 
 :pp33  rdf:type mf:QueryEvaluationTest ;
@@ -236,9 +236,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:name    "(pp33) Operator precedence 4" ;
     mf:action
-        [ qt:query  <path-p4.rq> ;
-          qt:data   <path-p3.ttl> ] ;
-    mf:result  <path-p4.srx>
+        [ qt:query  :path-p4.rq ;
+          qt:data   :path-p3.ttl ] ;
+    mf:result  :path-p4.srx
     .
 
 :pp34  rdf:type mf:QueryEvaluationTest ;
@@ -246,11 +246,11 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
     mf:name    "(pp34) Named Graph 1" ;
     mf:action
-        [ qt:query  <path-ng-01.rq> ;
-          qt:graphData   <ng-01.ttl> ;
-          qt:graphData   <ng-02.ttl> ;
-          qt:graphData   <ng-03.ttl> ] ;
-    mf:result  <path-ng-01.srx>
+        [ qt:query  :path-ng-01.rq ;
+          qt:graphData   :ng-01.ttl ;
+          qt:graphData   :ng-02.ttl ;
+          qt:graphData   :ng-03.ttl ] ;
+    mf:result  :path-ng-01.srx
     .
 
 :pp35  rdf:type mf:QueryEvaluationTest ;
@@ -258,11 +258,11 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
     mf:name    "(pp35) Named Graph 2" ;
     mf:action
-        [ qt:query  <path-ng-02.rq> ;
-          qt:graphData   <ng-01.ttl> ;
-          qt:graphData   <ng-02.ttl> ;
-          qt:graphData   <ng-03.ttl> ] ;
-    mf:result  <path-ng-01.srx>
+        [ qt:query  :path-ng-02.rq ;
+          qt:graphData   :ng-01.ttl ;
+          qt:graphData   :ng-02.ttl ;
+          qt:graphData   :ng-03.ttl ] ;
+    mf:result  :path-ng-01.srx
     .
 
 :pp36  rdf:type mf:QueryEvaluationTest ;
@@ -270,9 +270,9 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:name    "(pp36) Arbitrary path with bound endpoints" ;
     mf:action
-        [ qt:query  <pp36.rq> ;
-          qt:data   <clique3.ttl> ] ;
-    mf:result  <pp36.srx>
+        [ qt:query  :pp36.rq ;
+          qt:data   :clique3.ttl ] ;
+    mf:result  :pp36.srx
     .
 
 :pp37 rdf:type mf:QueryEvaluationTest ;
@@ -281,7 +281,7 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-15#resolution_2> ;
     mf:action 
-        [ qt:query <pp37.rq> ; 
-          qt:data  <pp37.ttl> ] ;
-    mf:result <pp37.srx> 
+        [ qt:query :pp37.rq ; 
+          qt:data  :pp37.ttl ] ;
+    mf:result :pp37.srx 
    .

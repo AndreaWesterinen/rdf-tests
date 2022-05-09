@@ -21,9 +21,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-08-16#resolution_2>; 
     mf:action
-         [ qt:query  <jsonres01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <jsonres01.srj>
+         [ qt:query  :jsonres01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :jsonres01.srj
     .
 
 :jsonres02 rdf:type mf:QueryEvaluationTest ;
@@ -32,9 +32,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-08-16#resolution_2>; 
     mf:action
-         [ qt:query  <jsonres02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <jsonres02.srj>
+         [ qt:query  :jsonres02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :jsonres02.srj
     .
 
 :jsonres03 rdf:type mf:QueryEvaluationTest ;
@@ -43,9 +43,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-08-16#resolution_2>; 
     mf:action
-         [ qt:query  <jsonres03.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <jsonres03.srj>
+         [ qt:query  :jsonres03.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :jsonres03.srj
     .
 
 :jsonres04 rdf:type mf:QueryEvaluationTest ;
@@ -54,7 +54,7 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-08-16#resolution_2>; 
     mf:action
-         [ qt:query  <jsonres04.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <jsonres04.srj>
+         [ qt:query  :jsonres04.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :jsonres04.srj
     .

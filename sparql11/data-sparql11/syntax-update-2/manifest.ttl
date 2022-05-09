@@ -19,5 +19,5 @@
 	dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
 	rdf:type       mf:PositiveUpdateSyntaxTest11 ;
-	mf:action      <large-request-01.ru> ;
+	mf:action      :large-request-01.ru ;
 	.

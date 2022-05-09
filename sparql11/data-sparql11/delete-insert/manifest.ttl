@@ -34,10 +34,10 @@
     rdfs:comment "This update request reverts all foaf:knows relations" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-01.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-01.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-01.ttl>
+    mf:result [ ut:data :delete-insert-post-01.ttl
               ] .
 
 :dawg-delete-insert-01b a mf:UpdateEvaluationTest ;
@@ -45,10 +45,10 @@
     rdfs:comment "This test case, as a variant of dawg-delete-insert-01, shoes that DELETE followed by INSERT is different from DELETE INSERT in a single operation" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-01b.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-01b.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-01b.ttl>
+    mf:result [ ut:data :delete-insert-post-01b.ttl
               ] .
 
 :dawg-delete-insert-01c a mf:UpdateEvaluationTest ;
@@ -56,10 +56,10 @@
     rdfs:comment "This test case, as a variant of dawg-delete-insert-01, shoes that INSERT followed by DELETE is different from DELETE INSERT in a single operation." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-01c.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-01c.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-01b.ttl>
+    mf:result [ ut:data :delete-insert-post-01b.ttl
               ] .
 
 
@@ -68,10 +68,10 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan'." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-02.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-02.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-02.ttl>
+    mf:result [ ut:data :delete-insert-post-02.ttl
               ] .
 
 :dawg-delete-insert-03
@@ -80,7 +80,7 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' using an unnamed bnode as wildcard" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-03.ru> .
+    mf:action :delete-insert-03.ru .
 
 :dawg-delete-insert-03b
     a mf:NegativeSyntaxTest11 ;
@@ -88,17 +88,17 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' using a named bnode as wildcard" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-03b.ru> .
+    mf:action :delete-insert-03b.ru .
 
 :dawg-delete-insert-04 a mf:UpdateEvaluationTest ;
     mf:name    "DELETE INSERT 4" ;
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' using a naive rewriting, as suggested in http://lists.w3.org/Archives/Public/public-rdf-dawg/2011JanMar/0305.html" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-04.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-04.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-02.ttl>
+    mf:result [ ut:data :delete-insert-post-02.ttl
               ] .
 
 :dawg-delete-insert-04b a mf:UpdateEvaluationTest ;
@@ -106,10 +106,10 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' using a simpler rewriting than dawg-delete-insert-04" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-04b.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-04b.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-02.ttl>
+    mf:result [ ut:data :delete-insert-post-02.ttl
               ] .
 
 :dawg-delete-insert-05
@@ -118,17 +118,17 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' and inserts that all 'Alans' know themselves only." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-05.ru> .
+    mf:action :delete-insert-05.ru .
 
 :dawg-delete-insert-05b a mf:UpdateEvaluationTest ;
     mf:name    "DELETE INSERT 5b" ;
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' and inserts that all 'Alans' know themselves only, using a rewriting analogous to :dawg-delete-insert-04b" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-05b.ru> ; 
-                ut:data <delete-insert-pre-01.ttl>
+    mf:action [ ut:request :delete-insert-05b.ru ; 
+                ut:data :delete-insert-pre-01.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-post-05.ttl>
+    mf:result [ ut:data :delete-insert-post-05.ttl
               ] .
 
 :dawg-delete-insert-06
@@ -137,17 +137,17 @@
     rdfs:comment "dawg-delete-insert-06 and dawg-delete-insert-06b show that the rewriting in dawg-delete-insert-05b.ru isn't equivalent to dawg-delete-insert-05.ru in case Alan doesn't know anybody." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-05.ru> .
+    mf:action :delete-insert-05.ru .
 
 :dawg-delete-insert-06b a mf:UpdateEvaluationTest ;
     mf:name    "DELETE INSERT 6b" ;
     rdfs:comment "dawg-delete-insert-06 and dawg-delete-insert-06b show that the rewriting in dawg-delete-insert-05b.ru isn't equivalent to dawg-delete-insert-05.ru in case Alan doesn't know anybody." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <delete-insert-05b.ru> ; 
-                ut:data <delete-insert-pre-06.ttl>
+    mf:action [ ut:request :delete-insert-05b.ru ; 
+                ut:data :delete-insert-pre-06.ttl
               ] ;
-    mf:result [ ut:data <delete-insert-pre-06.ttl>
+    mf:result [ ut:data :delete-insert-pre-06.ttl
               ] .
 
 :dawg-delete-insert-07
@@ -156,7 +156,7 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' and inserts a single foaf:knows triple with a blank node as object for 'Alan'. This shows the different behavior of bnodes in INSERT (similar to CONSTRUCT) and DELETE (bnodes act as wildcards) templates." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-07.ru> .
+    mf:action :delete-insert-07.ru .
 
 :dawg-delete-insert-07b 
     a mf:NegativeSyntaxTest11 ;
@@ -164,7 +164,7 @@
     rdfs:comment "This deletes all foaf:knows relations from anyone named 'Alan' and replaces them by bnodes. This shows the different behavior of bnodes in INSERT (similar to CONSTRUCT) and DELETE (bnodes act as wildcards) templates. As opposed to test case dawg-delete-insert-7, note that the result graph in this example is non-lean." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-07b.ru> .
+    mf:action :delete-insert-07b.ru .
 
 
 :dawg-delete-insert-08
@@ -173,7 +173,7 @@
     rdfs:comment "This DELETE test was first brought up in http://lists.w3.org/Archives/Public/public-rdf-dawg/2011JanMar/0290.html. It demonstrates how unbound variables (from an OPTIONAL) are handled in DELETE templates" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-08.ru> .
+    mf:action :delete-insert-08.ru .
 
 :dawg-delete-insert-09
     a mf:NegativeSyntaxTest11 ;
@@ -181,4 +181,4 @@
     rdfs:comment "This DELETE test was first brought up in http://lists.w3.org/Archives/Public/public-rdf-dawg/2011JanMar/0317.html. It demonstrates the behavior of shared bnodes in a DELETE template." ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action <delete-insert-09.ru> .
+    mf:action :delete-insert-09.ru .

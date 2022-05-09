@@ -24,9 +24,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp01.rq> ;
-           qt:data   <projexp01.ttl> ] ;
-    mf:result  <projexp01.srx>
+         [ qt:query  :projexp01.rq ;
+           qt:data   :projexp01.ttl ] ;
+    mf:result  :projexp01.srx
     .
     
     
@@ -35,9 +35,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp02.rq> ;
-           qt:data   <projexp02.ttl> ] ;
-    mf:result  <projexp02.srx>
+         [ qt:query  :projexp02.rq ;
+           qt:data   :projexp02.ttl ] ;
+    mf:result  :projexp02.srx
     .   
 
 :projexp03 rdf:type mf:QueryEvaluationTest ;
@@ -45,9 +45,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp03.rq> ;
-           qt:data   <projexp03.ttl> ] ;
-    mf:result  <projexp03.srx>
+         [ qt:query  :projexp03.rq ;
+           qt:data   :projexp03.ttl ] ;
+    mf:result  :projexp03.srx
     .   
 
 :projexp04 rdf:type mf:QueryEvaluationTest ;
@@ -55,9 +55,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp04.rq> ;
-           qt:data   <projexp04.ttl> ] ;
-    mf:result  <projexp04.srx>
+         [ qt:query  :projexp04.rq ;
+           qt:data   :projexp04.ttl ] ;
+    mf:result  :projexp04.srx
     . 
     
 :projexp05 rdf:type mf:QueryEvaluationTest ;
@@ -65,9 +65,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp05.rq> ;
-           qt:data   <projexp05.ttl> ] ;
-    mf:result  <projexp05.srx>
+         [ qt:query  :projexp05.rq ;
+           qt:data   :projexp05.ttl ] ;
+    mf:result  :projexp05.srx
     .   
 
 :projexp06 rdf:type mf:QueryEvaluationTest ;
@@ -75,9 +75,9 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp06.rq> ;
-           qt:data   <projexp06.ttl> ] ;
-    mf:result  <projexp06.srx>
+         [ qt:query  :projexp06.rq ;
+           qt:data   :projexp06.ttl ] ;
+    mf:result  :projexp06.srx
     .   
     
 :projexp07 rdf:type mf:QueryEvaluationTest ;
@@ -85,7 +85,7 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-09-07#resolution_3> ;
     mf:action
-         [ qt:query  <projexp07.rq> ;
-           qt:data   <projexp07.ttl> ] ;
-    mf:result  <projexp07.srx>
+         [ qt:query  :projexp07.rq ;
+           qt:data   :projexp07.ttl ] ;
+    mf:result  :projexp07.srx
     .

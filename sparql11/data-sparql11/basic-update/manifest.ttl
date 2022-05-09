@@ -31,10 +31,10 @@
     rdfs:comment "This is a simple insert of a single triple to the unnamed graph of an empty graph store" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <insert-data-spo1.ru> ; 
+    mf:action [ ut:request :insert-data-spo1.ru ; 
               ] ;
     mf:result [ ut:result ut:success ; 
-                ut:data  <spo.ttl>
+                ut:data  :spo.ttl
               ] .
 
 
@@ -43,10 +43,10 @@
     rdfs:comment "This is a simple insert of a single triple into the named graph <http://example.org/g1> of an empty graph store" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <insert-data-named1.ru> ; 
+    mf:action [ ut:request :insert-data-named1.ru ; 
               ] ;
     mf:result [ ut:result ut:success ; 
-                ut:graphData  [ ut:graph <spo.ttl> ;
+                ut:graphData  [ ut:graph :spo.ttl ;
                                 rdfs:label "http://example.org/g1" ] 
               ] .
 
@@ -55,12 +55,12 @@
     rdfs:comment "This is a simple insert of a single triple into the named graph <http://example.org/g1> of a graph store consisting of an empty unnamed graph and the named graph holds one (different) triple already" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <insert-data-named2.ru> ; 
-                ut:graphData  [ ut:graph <spo.ttl> ;
+    mf:action [ ut:request :insert-data-named2.ru ; 
+                ut:graphData  [ ut:graph :spo.ttl ;
                                 rdfs:label "http://example.org/g1" ]
               ] ;
     mf:result [ ut:result ut:success ; 
-                ut:graphData  [ ut:graph <spo2.ttl> ;
+                ut:graphData  [ ut:graph :spo2.ttl ;
                                 rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -69,12 +69,12 @@
     rdfs:comment "This is a simple insert of a single triple into the named graph <http://example.org/g1> of a graph store consisting of an empty unnamed graph and the named holds the inserted triple already (using the same query as insert-data-named1)" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <insert-data-named1.ru> ; 
-                ut:graphData  [ ut:graph <spo.ttl> ;
+    mf:action [ ut:request :insert-data-named1.ru ; 
+                ut:graphData  [ ut:graph :spo.ttl ;
                                 rdfs:label "http://example.org/g1" ]
               ] ;
     mf:result [ ut:result ut:success ; 
-                ut:graphData  [ ut:graph <spo.ttl> ;
+                ut:graphData  [ ut:graph :spo.ttl ;
                                 rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -84,11 +84,11 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <insert-01.ru> ; 
-                ut:data <insert-01-pre.ttl> ;
+    			ut:request :insert-01.ru ; 
+                ut:data :insert-01-pre.ttl ;
               ] ;
     mf:result [
-                ut:data <insert-01-post.ttl> ;
+                ut:data :insert-01-post.ttl ;
             ] ;
     .
 
@@ -98,12 +98,12 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <insert-02.ru> ; 
-                ut:data <insert-02-pre.ttl> ;
+    			ut:request :insert-02.ru ; 
+                ut:data :insert-02-pre.ttl ;
               ] ;
     mf:result [
-                ut:data <insert-02-post.ttl> ;
-                  ut:graphData [ ut:graph <insert-02-g1-post.ttl> ;
+                ut:data :insert-02-post.ttl ;
+                  ut:graphData [ ut:graph :insert-02-g1-post.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
             ] ;
     .
@@ -114,14 +114,14 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <insert-03.ru> ; 
-                ut:data <insert-03-pre.ttl> ;
-                  ut:graphData [ ut:graph <insert-03-g1-pre.ttl> ;
+    			ut:request :insert-03.ru ; 
+                ut:data :insert-03-pre.ttl ;
+                  ut:graphData [ ut:graph :insert-03-g1-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
               ] ;
     mf:result [
-                ut:data <insert-03-post.ttl> ;
-                  ut:graphData [ ut:graph <insert-03-g1-post.ttl> ;
+                ut:data :insert-03-post.ttl ;
+                  ut:graphData [ ut:graph :insert-03-g1-post.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
             ] ;
     .
@@ -132,14 +132,14 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <insert-04.ru> ; 
-                ut:data <insert-04-pre.ttl> ;
-                  ut:graphData [ ut:graph <insert-04-g1-pre.ttl> ;
+    			ut:request :insert-04.ru ; 
+                ut:data :insert-04-pre.ttl ;
+                  ut:graphData [ ut:graph :insert-04-g1-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
               ] ;
     mf:result [
-                ut:data <insert-04-post.ttl> ;
-                  ut:graphData [ ut:graph <insert-04-g1-post.ttl> ;
+                ut:data :insert-04-post.ttl ;
+                  ut:graphData [ ut:graph :insert-04-g1-post.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
             ] ;
     .
@@ -150,18 +150,18 @@
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
     mf:action [
-    			ut:request <insert-using-01.ru> ; 
-                ut:data <insert-using-01-pre.ttl> ;
-                  ut:graphData [ ut:graph <insert-using-01-g1-pre.ttl> ;
+    			ut:request :insert-using-01.ru ; 
+                ut:data :insert-using-01-pre.ttl ;
+                  ut:graphData [ ut:graph :insert-using-01-g1-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                  ut:graphData [ ut:graph <insert-using-01-g2-pre.ttl> ;
+                  ut:graphData [ ut:graph :insert-using-01-g2-pre.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
               ] ;
     mf:result [
-                ut:data <insert-using-01-post.ttl> ;
-                  ut:graphData [ ut:graph <insert-using-01-g1-post.ttl> ;
+                ut:data :insert-using-01-post.ttl ;
+                  ut:graphData [ ut:graph :insert-using-01-g1-post.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                  ut:graphData [ ut:graph <insert-using-01-g2-post.ttl> ;
+                  ut:graphData [ ut:graph :insert-using-01-g2-post.ttl ;
                                rdfs:label "http://example.org/g2" ] ;
             ] ;
     .
@@ -172,12 +172,12 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_3> ;
    mf:action [
-                ut:request <insert-05a.ru> ;
-                ut:graphData [ ut:graph <insert-05a-g1-pre.ttl> ;
+                ut:request :insert-05a.ru ;
+                ut:graphData [ ut:graph :insert-05a-g1-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
              ] ;
    mf:result [
-                ut:graphData [ ut:graph <insert-05a-g3-post.ttl> ;
+                ut:graphData [ ut:graph :insert-05a-g3-post.ttl ;
                                rdfs:label "http://example.org/g3" ] ;
              ] ;
  .   
@@ -188,10 +188,10 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-12-11#resolution_5> ;
    mf:action [
-                ut:request <insert-data-same-bnode.ru> ;
+                ut:request :insert-data-same-bnode.ru ;
              ] ;
    mf:result [
-                ut:graphData [ ut:graph <insert-05a-g3-post.ttl> ;
+                ut:graphData [ ut:graph :insert-05a-g3-post.ttl ;
                                rdfs:label "http://example.org/g3" ] ;
              ] ;
  .   
@@ -202,13 +202,13 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-12-11#resolution_5> ;
    mf:action [
-                ut:request <insert-where-same-bnode.ru> ;
-                ut:data <insert-where-same-bnode-pre.ttl> ;
+                ut:request :insert-where-same-bnode.ru ;
+                ut:data :insert-where-same-bnode-pre.ttl ;
 
              ] ;
    mf:result [
-                ut:data <insert-where-same-bnode-pre.ttl> ;
-                ut:graphData [ ut:graph <insert-where-same-bnode-g3-post.ttl> ;
+                ut:data :insert-where-same-bnode-pre.ttl ;
+                ut:graphData [ ut:graph :insert-where-same-bnode-g3-post.ttl ;
                                rdfs:label "http://example.org/g3" ] ;
              ] ;
  .
@@ -219,13 +219,13 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-12-11#resolution_5> ;
    mf:action [
-                ut:request <insert-where-same-bnode2.ru> ;
-                ut:data <insert-where-same-bnode-pre.ttl> ;
+                ut:request :insert-where-same-bnode2.ru ;
+                ut:data :insert-where-same-bnode-pre.ttl ;
 
              ] ;
    mf:result [
-                ut:data <insert-where-same-bnode-pre.ttl> ;
-                ut:graphData [ ut:graph <insert-where-same-bnode-g3-post.ttl> ;
+                ut:data :insert-where-same-bnode-pre.ttl ;
+                ut:graphData [ ut:graph :insert-where-same-bnode-g3-post.ttl ;
                                rdfs:label "http://example.org/g3" ] ;
              ] ;
  .

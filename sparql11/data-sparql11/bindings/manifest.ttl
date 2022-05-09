@@ -28,10 +28,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values01.rq> ;
-        qt:data   <data01.ttl>
+        qt:query  :values01.rq ;
+        qt:data   :data01.ttl
     ] ;
-    mf:result  <values01.srx> .
+    mf:result  :values01.srx .
 
 :values2 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with obj-var, 1 row" ;
@@ -39,10 +39,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values02.rq> ;
-        qt:data   <data02.ttl>
+        qt:query  :values02.rq ;
+        qt:data   :data02.ttl
     ] ;
-    mf:result  <values02.srx> .  
+    mf:result  :values02.srx .  
 
 :values3 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with 2 obj-vars, 1 row" ;
@@ -50,10 +50,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values03.rq> ;
-        qt:data   <data03.ttl>
+        qt:query  :values03.rq ;
+        qt:data   :data03.ttl
     ] ;
-    mf:result  <values03.srx> . 
+    mf:result  :values03.srx . 
 
 :values4 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with 2 obj-vars, 1 row with UNDEF" ;
@@ -61,10 +61,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values04.rq> ;
-        qt:data   <data04.ttl>
+        qt:query  :values04.rq ;
+        qt:data   :data04.ttl
     ] ;
-    mf:result  <values04.srx> .   
+    mf:result  :values04.srx .   
 
 :values5 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with 2 obj-vars, 2 rows with UNDEF" ;
@@ -72,10 +72,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values05.rq> ;
-        qt:data   <data05.ttl>
+        qt:query  :values05.rq ;
+        qt:data   :data05.ttl
     ] ;
-    mf:result  <values05.srx> .  
+    mf:result  :values05.srx .  
 
 :values6 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with pred-var, 1 row" ;
@@ -83,10 +83,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values06.rq> ;
-        qt:data   <data06.ttl>
+        qt:query  :values06.rq ;
+        qt:data   :data06.ttl
     ] ;
-    mf:result  <values06.srx> .   
+    mf:result  :values06.srx .   
 
 :values7 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with (OPTIONAL) obj-var, 1 row" ;
@@ -95,10 +95,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-05-24#resolution_4> ;
     mf:action
     [
-        qt:query  <values07.rq> ;
-        qt:data   <data07.ttl>
+        qt:query  :values07.rq ;
+        qt:data   :data07.ttl
     ] ;
-    mf:result  <values07.srx> .   
+    mf:result  :values07.srx .   
 
 :values8 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-query VALUES with subj/obj-vars, 2 rows with UNDEF" ;
@@ -106,10 +106,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <values08.rq> ;
-        qt:data   <data08.ttl>
+        qt:query  :values08.rq ;
+        qt:data   :data08.ttl
     ] ;
-    mf:result  <values08.srx> .   
+    mf:result  :values08.srx .   
 
 
 :inline1 rdf:type mf:QueryEvaluationTest ;
@@ -118,10 +118,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <inline01.rq> ;
-        qt:data   <data01.ttl>
+        qt:query  :inline01.rq ;
+        qt:data   :data01.ttl
     ] ;
-    mf:result  <inline01.srx> .   
+    mf:result  :inline01.srx .   
 
 :inline2 rdf:type mf:QueryEvaluationTest ;
     mf:name    "Post-subquery VALUES" ;
@@ -129,10 +129,10 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
     [
-        qt:query  <inline02.rq> ;
-        qt:data   <data02.ttl>
+        qt:query  :inline02.rq ;
+        qt:data   :data02.ttl
     ] ;
-    mf:result  <inline02.srx> .   
+    mf:result  :inline02.srx .   
 
 
 

@@ -87,9 +87,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <strdt01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strdt01.srx> ;
+         [ qt:query  :strdt01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strdt01.srx ;
     .
 
 :strdt02 rdf:type mf:QueryEvaluationTest ;
@@ -98,9 +98,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <strdt02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strdt02.srx> ;
+         [ qt:query  :strdt02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strdt02.srx ;
     .
 
 :strdt03-rdf11 rdf:type mf:QueryEvaluationTest ;
@@ -108,9 +108,9 @@
     mf:feature sparql:strdt ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <strdt03.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strdt03-rdf11.srx> ;
+         [ qt:query  :strdt03.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strdt03-rdf11.srx ;
     .
 
 :strlang01 rdf:type mf:QueryEvaluationTest ;
@@ -119,9 +119,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <strlang01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strlang01.srx> ;
+         [ qt:query  :strlang01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strlang01.srx ;
     .
 
 :strlang02 rdf:type mf:QueryEvaluationTest ;
@@ -130,9 +130,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <strlang02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strlang02.srx> ;
+         [ qt:query  :strlang02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strlang02.srx ;
     .
 
 :strlang03-rdf11 rdf:type mf:QueryEvaluationTest ;
@@ -140,9 +140,9 @@
     mf:feature sparql:strlang ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <strlang03.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <strlang03-rdf11.srx> ;
+         [ qt:query  :strlang03.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :strlang03-rdf11.srx ;
     .
 
 :isnumeric01 rdf:type mf:QueryEvaluationTest ;
@@ -151,9 +151,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <isnumeric01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <isnumeric01.srx> ;
+         [ qt:query  :isnumeric01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :isnumeric01.srx ;
     .
 
 :abs01 rdf:type mf:QueryEvaluationTest ;
@@ -162,9 +162,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <abs01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <abs01.srx> ;
+         [ qt:query  :abs01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :abs01.srx ;
     .
 
 :ceil01 rdf:type mf:QueryEvaluationTest ;
@@ -173,9 +173,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <ceil01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <ceil01.srx> ;
+         [ qt:query  :ceil01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :ceil01.srx ;
     .
 
 :floor01 rdf:type mf:QueryEvaluationTest ;
@@ -184,9 +184,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <floor01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <floor01.srx> ;
+         [ qt:query  :floor01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :floor01.srx ;
     .
 
 :round01 rdf:type mf:QueryEvaluationTest ;
@@ -195,9 +195,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <round01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <round01.srx> ;
+         [ qt:query  :round01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :round01.srx ;
     .
 
 :concat01 rdf:type mf:QueryEvaluationTest ;
@@ -206,9 +206,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <concat01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <concat01.srx> ;
+         [ qt:query  :concat01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :concat01.srx ;
     .
 
 :concat02 rdf:type mf:QueryEvaluationTest ;
@@ -217,9 +217,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <concat02.rq> ;
-           qt:data   <data2.ttl> ] ;
-    mf:result  <concat02.srx> ;
+         [ qt:query  :concat02.rq ;
+           qt:data   :data2.ttl ] ;
+    mf:result  :concat02.srx ;
     .
 
 :substring01 rdf:type mf:QueryEvaluationTest ;
@@ -228,9 +228,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <substring01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <substring01.srx> ;
+         [ qt:query  :substring01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :substring01.srx ;
     .
 
 :substring01-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -238,9 +238,9 @@
     mf:feature sparql:substr ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <substring01.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <substring01-non-bmp.srx> ;
+         [ qt:query  :substring01.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :substring01-non-bmp.srx ;
     .
 
 :substring02 rdf:type mf:QueryEvaluationTest ;
@@ -249,9 +249,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <substring02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <substring02.srx> ;
+         [ qt:query  :substring02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :substring02.srx ;
     .
 
 :substring02-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -259,9 +259,9 @@
     mf:feature sparql:substr ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <substring02.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <substring02-non-bmp.srx> ;
+         [ qt:query  :substring02.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :substring02-non-bmp.srx ;
     .
 
 :length01 rdf:type mf:QueryEvaluationTest ;
@@ -270,9 +270,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <length01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <length01.srx> ;
+         [ qt:query  :length01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :length01.srx ;
     .
 
 :length01-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -280,9 +280,9 @@
     mf:feature sparql:strlen ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <length01.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <length01-non-bmp.srx> ;
+         [ qt:query  :length01.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :length01-non-bmp.srx ;
     .
 
 :ucase01 rdf:type mf:QueryEvaluationTest ;
@@ -291,9 +291,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <ucase01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <ucase01.srx> ;
+         [ qt:query  :ucase01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :ucase01.srx ;
     .
 
 :ucase01-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -301,9 +301,9 @@
     mf:feature sparql:ucase ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <ucase01.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <ucase01-non-bmp.srx> ;
+         [ qt:query  :ucase01.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :ucase01-non-bmp.srx ;
     .
 
 :lcase01 rdf:type mf:QueryEvaluationTest ;
@@ -312,9 +312,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <lcase01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <lcase01.srx> ;
+         [ qt:query  :lcase01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :lcase01.srx ;
     .
 
 :lcase01-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -322,9 +322,9 @@
     mf:feature sparql:lcase ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <lcase01.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <lcase01-non-bmp.srx> ;
+         [ qt:query  :lcase01.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :lcase01-non-bmp.srx ;
     .
 
 :encode01 rdf:type mf:QueryEvaluationTest ;
@@ -333,9 +333,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <encode01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <encode01.srx> ;
+         [ qt:query  :encode01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :encode01.srx ;
     .
 
 :encode01-non-bmp rdf:type mf:QueryEvaluationTest ;
@@ -343,9 +343,9 @@
     mf:feature sparql:encode_for_uri ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <encode01.rq> ;
-           qt:data   <data5.ttl> ] ;
-    mf:result  <encode01-non-bmp.srx> ;
+         [ qt:query  :encode01.rq ;
+           qt:data   :data5.ttl ] ;
+    mf:result  :encode01-non-bmp.srx ;
     .
 
 :contains01 rdf:type mf:QueryEvaluationTest ;
@@ -354,9 +354,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <contains01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <contains01.srx> ;
+         [ qt:query  :contains01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :contains01.srx ;
     .
 
 :starts01 rdf:type mf:QueryEvaluationTest ;
@@ -365,9 +365,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <starts01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <starts01.srx> ;
+         [ qt:query  :starts01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :starts01.srx ;
     .
 
 :ends01 rdf:type mf:QueryEvaluationTest ;
@@ -376,9 +376,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <ends01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <ends01.srx> ;
+         [ qt:query  :ends01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :ends01.srx ;
     .
 
 :plus-1-corrected a mf:QueryEvaluationTest ;
@@ -386,9 +386,9 @@
     rdfs:comment    "plus operator on ?x + ?y on string and numeric values" ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-       [ qt:query  <plus-1-corrected.rq> ;
-    qt:data   <data-builtin-3.ttl> ] ;
-    mf:result  <plus-1.srx> ;
+       [ qt:query  :plus-1-corrected.rq ;
+    qt:data   :data-builtin-3.ttl ] ;
+    mf:result  :plus-1.srx ;
     .
 
 :plus-2-corrected a mf:QueryEvaluationTest ;
@@ -396,9 +396,9 @@
     rdfs:comment    "plus operator in combination with str(), i.e.  str(?x) + str(?y), on string and numeric values" ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-       [ qt:query  <plus-2-corrected.rq> ;
-    qt:data   <data-builtin-3.ttl> ] ;
-    mf:result  <plus-2.srx> ;
+       [ qt:query  :plus-2-corrected.rq ;
+    qt:data   :data-builtin-3.ttl ] ;
+    mf:result  :plus-2.srx ;
     .
 
 :md5-01 rdf:type mf:QueryEvaluationTest ;
@@ -407,9 +407,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <md5-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <md5-01.srx> ;
+         [ qt:query  :md5-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :md5-01.srx ;
     .
 
 :md5-02 rdf:type mf:QueryEvaluationTest ;
@@ -418,9 +418,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <md5-02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <md5-02.srx> ;
+         [ qt:query  :md5-02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :md5-02.srx ;
     .
 
 :sha1-01 rdf:type mf:QueryEvaluationTest ;
@@ -429,9 +429,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha1-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <sha1-01.srx> ;
+         [ qt:query  :sha1-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :sha1-01.srx ;
     .
 
 :sha1-02 rdf:type mf:QueryEvaluationTest ;
@@ -440,9 +440,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha1-02.rq> ;
-           qt:data   <hash-unicode.ttl> ] ;
-    mf:result  <sha1-02.srx> ;
+         [ qt:query  :sha1-02.rq ;
+           qt:data   :hash-unicode.ttl ] ;
+    mf:result  :sha1-02.srx ;
     .
 
 :sha256-01 rdf:type mf:QueryEvaluationTest ;
@@ -451,9 +451,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha256-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <sha256-01.srx> ;
+         [ qt:query  :sha256-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :sha256-01.srx ;
     .
 
 :sha256-02 rdf:type mf:QueryEvaluationTest ;
@@ -462,9 +462,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha256-02.rq> ;
-           qt:data   <hash-unicode.ttl> ] ;
-    mf:result  <sha256-02.srx> ;
+         [ qt:query  :sha256-02.rq ;
+           qt:data   :hash-unicode.ttl ] ;
+    mf:result  :sha256-02.srx ;
     .
 
 :sha512-01 rdf:type mf:QueryEvaluationTest ;
@@ -473,9 +473,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha512-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <sha512-01.srx> ;
+         [ qt:query  :sha512-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :sha512-01.srx ;
     .
 
 :sha512-02 rdf:type mf:QueryEvaluationTest ;
@@ -484,9 +484,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <sha512-02.rq> ;
-           qt:data   <hash-unicode.ttl> ] ;
-    mf:result  <sha512-02.srx> ;
+         [ qt:query  :sha512-02.rq ;
+           qt:data   :hash-unicode.ttl ] ;
+    mf:result  :sha512-02.srx ;
     .
 
 :hours rdf:type mf:QueryEvaluationTest ;
@@ -495,9 +495,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <hours-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <hours-01.srx> ;
+         [ qt:query  :hours-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :hours-01.srx ;
     .
 
 :minutes rdf:type mf:QueryEvaluationTest ;
@@ -506,9 +506,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <minutes-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <minutes-01.srx> ;
+         [ qt:query  :minutes-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :minutes-01.srx ;
     .
 
 :seconds rdf:type mf:QueryEvaluationTest ;
@@ -517,9 +517,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <seconds-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <seconds-01.srx> ;
+         [ qt:query  :seconds-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :seconds-01.srx ;
     .
 
 :year rdf:type mf:QueryEvaluationTest ;
@@ -528,9 +528,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <year-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <year-01.srx> ;
+         [ qt:query  :year-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :year-01.srx ;
     .
 
 :month rdf:type mf:QueryEvaluationTest ;
@@ -539,9 +539,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <month-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <month-01.srx> ;
+         [ qt:query  :month-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :month-01.srx ;
     .
 
 :day rdf:type mf:QueryEvaluationTest ;
@@ -550,9 +550,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <day-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <day-01.srx> ;
+         [ qt:query  :day-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :day-01.srx ;
     .
 
 :timezone rdf:type mf:QueryEvaluationTest ;
@@ -561,9 +561,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <timezone-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <timezone-01.srx> ;
+         [ qt:query  :timezone-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :timezone-01.srx ;
     .
 
 :tz rdf:type mf:QueryEvaluationTest ;
@@ -572,9 +572,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <tz-01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <tz-01.srx> ;
+         [ qt:query  :tz-01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :tz-01.srx ;
     .
 
 :bnode01 rdf:type mf:QueryEvaluationTest ;
@@ -583,9 +583,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <bnode01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <bnode01.srx> ;
+         [ qt:query  :bnode01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :bnode01.srx ;
     .
 
 :in01 rdf:type mf:QueryEvaluationTest ;
@@ -594,9 +594,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <in01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <in01.srx> ;
+         [ qt:query  :in01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :in01.srx ;
     .
 
 :in02 rdf:type mf:QueryEvaluationTest ;
@@ -605,9 +605,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <in02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <in02.srx> ;
+         [ qt:query  :in02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :in02.srx ;
     .
 
 :notin01 rdf:type mf:QueryEvaluationTest ;
@@ -617,9 +617,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <notin01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <notin01.srx> ;
+         [ qt:query  :notin01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :notin01.srx ;
     .
 
 :notin02 rdf:type mf:QueryEvaluationTest ;
@@ -629,9 +629,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <notin02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <notin02.srx> ;
+         [ qt:query  :notin02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :notin02.srx ;
     .
 
 :now01 rdf:type mf:QueryEvaluationTest ;
@@ -640,9 +640,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <now01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <now01.srx> ;
+         [ qt:query  :now01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :now01.srx ;
     .
 
 :rand01 rdf:type mf:QueryEvaluationTest ;
@@ -651,9 +651,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <rand01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <rand01.srx> ;
+         [ qt:query  :rand01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :rand01.srx ;
     .
 
 :bnode02 rdf:type mf:QueryEvaluationTest ;
@@ -662,9 +662,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <bnode02.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <bnode02.srx> ;
+         [ qt:query  :bnode02.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :bnode02.srx ;
     .
 
 :iri01 rdf:type mf:QueryEvaluationTest ;
@@ -674,9 +674,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <iri01.rq> ;
-           qt:data   <data.ttl> ] ;
-    mf:result  <iri01.srx> ;
+         [ qt:query  :iri01.rq ;
+           qt:data   :data.ttl ] ;
+    mf:result  :iri01.srx ;
     .
 
 :if01 rdf:type mf:QueryEvaluationTest ;
@@ -685,9 +685,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <if01.rq> ;
-           qt:data   <data2.ttl> ] ;
-    mf:result  <if01.srx> ;
+         [ qt:query  :if01.rq ;
+           qt:data   :data2.ttl ] ;
+    mf:result  :if01.srx ;
     .
 
 :if02 rdf:type mf:QueryEvaluationTest ;
@@ -696,9 +696,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <if02.rq> ;
-           qt:data   <data2.ttl> ] ;
-    mf:result  <if02.srx> ;
+         [ qt:query  :if02.rq ;
+           qt:data   :data2.ttl ] ;
+    mf:result  :if02.srx ;
     .
 
 :coalesce01 rdf:type mf:QueryEvaluationTest ;
@@ -707,9 +707,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <coalesce01.rq> ;
-           qt:data   <data-coalesce.ttl> ] ;
-    mf:result  <coalesce01.srx> ;
+         [ qt:query  :coalesce01.rq ;
+           qt:data   :data-coalesce.ttl ] ;
+    mf:result  :coalesce01.srx ;
     .
 
 :strbefore01a rdf:type mf:QueryEvaluationTest ;
@@ -718,9 +718,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <strbefore01.rq> ;
-           qt:data   <data2.ttl> ] ;
-    mf:result  <strbefore01a.srx> ;
+         [ qt:query  :strbefore01.rq ;
+           qt:data   :data2.ttl ] ;
+    mf:result  :strbefore01a.srx ;
     .
 
 :strbefore02 rdf:type mf:QueryEvaluationTest ;
@@ -729,9 +729,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <strbefore02.rq> ;
-           qt:data   <data4.ttl> ] ;
-    mf:result  <strbefore02.srx> ;
+         [ qt:query  :strbefore02.rq ;
+           qt:data   :data4.ttl ] ;
+    mf:result  :strbefore02.srx ;
     .
 
 :strafter01a rdf:type mf:QueryEvaluationTest ;
@@ -740,9 +740,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <strafter01.rq> ;
-           qt:data   <data2.ttl> ] ;
-    mf:result  <strafter01a.srx> ;
+         [ qt:query  :strafter01.rq ;
+           qt:data   :data2.ttl ] ;
+    mf:result  :strafter01a.srx ;
     .
 
 :strafter02 rdf:type mf:QueryEvaluationTest ;
@@ -751,9 +751,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <strafter02.rq> ;
-           qt:data   <data4.ttl> ] ;
-    mf:result  <strafter02.srx> ;
+         [ qt:query  :strafter02.rq ;
+           qt:data   :data4.ttl ] ;
+    mf:result  :strafter02.srx ;
     .
 
 :replace01 rdf:type mf:QueryEvaluationTest ;
@@ -762,9 +762,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <replace01.rq> ;
-           qt:data   <data3.ttl> ] ;
-    mf:result  <replace01.srx> ;
+         [ qt:query  :replace01.rq ;
+           qt:data   :data3.ttl ] ;
+    mf:result  :replace01.srx ;
     .
 
 :replace02 rdf:type mf:QueryEvaluationTest ;
@@ -773,9 +773,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <replace02.rq> ;
-           qt:data   <data3.ttl> ] ;
-    mf:result  <replace02.srx> ;
+         [ qt:query  :replace02.rq ;
+           qt:data   :data3.ttl ] ;
+    mf:result  :replace02.srx ;
     .
 
 :replace03 rdf:type mf:QueryEvaluationTest ;
@@ -784,9 +784,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-01-31#resolution_3> ;
     mf:action
-         [ qt:query  <replace03.rq> ;
-           qt:data   <data3.ttl> ] ;
-    mf:result  <replace03.srx> ;
+         [ qt:query  :replace03.rq ;
+           qt:data   :data3.ttl ] ;
+    mf:result  :replace03.srx ;
     .
 
 :uuid01 rdf:type mf:QueryEvaluationTest ;
@@ -795,9 +795,9 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <uuid01.rq> ;
-           qt:data   <data-empty.nt> ] ;
-    mf:result  <uuid01.srx> ;
+         [ qt:query  :uuid01.rq ;
+           qt:data   :data-empty.nt ] ;
+    mf:result  :uuid01.srx ;
     .
 
 :uuid02 rdf:type mf:QueryEvaluationTest ;
@@ -807,9 +807,9 @@
 	mf:feature sparql:uuid ;
     dawgt:approval dawgt:Proposed ;
     mf:action
-         [ qt:query  <uuid02.rq> ;
-           qt:data   <data-empty.nt> ] ;
-    mf:result  <uuid02.srx> ;
+         [ qt:query  :uuid02.rq ;
+           qt:data   :data-empty.nt ] ;
+    mf:result  :uuid02.srx ;
 	.
 
 :struuid01 rdf:type mf:QueryEvaluationTest ;
@@ -818,8 +818,8 @@
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-08-07#resolution_2> ;
     mf:action
-         [ qt:query  <struuid01.rq> ;
-           qt:data   <data-empty.nt> ] ;
-    mf:result  <struuid01.srx> ;
+         [ qt:query  :struuid01.rq ;
+           qt:data   :data-empty.nt ] ;
+    mf:result  :struuid01.srx ;
     .
 

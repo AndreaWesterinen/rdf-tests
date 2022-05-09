@@ -25,13 +25,13 @@
     rdfs:comment "Add the default graph to an existing graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-01.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-01.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-post.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-post.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -40,11 +40,11 @@
     rdfs:comment "Add the default graph to a non-existing graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-01.ru> ;
-                ut:data <add-default.ttl> ;
+    mf:action [ ut:request :add-01.ru ;
+                ut:data :add-default.ttl ;
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-default.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-default.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -53,17 +53,17 @@
     rdfs:comment "Add a named graph to an existing graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-03.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-03.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <add-02-pre.ttl> ;
+                ut:graphData [ ut:graph :add-02-pre.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <add-02-post.ttl> ;
+                ut:graphData [ ut:graph :add-02-post.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] .
 
@@ -72,15 +72,15 @@
     rdfs:comment "Add a named graph to a non-existing graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-03.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-03.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] .
 
@@ -89,17 +89,17 @@
     rdfs:comment "Add a named graph to an existing graph with overlapping data" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-05.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-05.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <add-03-pre.ttl> ;
+                ut:graphData [ ut:graph :add-03-pre.ttl ;
                                rdfs:label "http://example.org/g3" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <add-03-post.ttl> ;
+                ut:graphData [ ut:graph :add-03-post.ttl ;
                                rdfs:label "http://example.org/g3" ]
               ] .
 
@@ -108,13 +108,13 @@
     rdfs:comment "Add a non-existing graph to an existing graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-06.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-06.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -123,13 +123,13 @@
     rdfs:comment "Add an existing graph to the default graph" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-07.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-07.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <add-01-post.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-01-post.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -138,12 +138,12 @@
     rdfs:comment "Add a graph to itself" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-02-07#resolution_3> ;
-    mf:action [ ut:request <add-08.ru> ;
-                ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:action [ ut:request :add-08.ru ;
+                ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <add-default.ttl> ;
-                ut:graphData [ ut:graph <add-01-pre.ttl> ;
+    mf:result [ ut:data :add-default.ttl ;
+                ut:graphData [ ut:graph :add-01-pre.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .

@@ -23,13 +23,13 @@
     rdfs:comment "Copy the default graph to an existing graph" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-01.ru> ;
-                ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:action [ ut:request :copy-01.ru ;
+                ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-default.ttl> ;
+    mf:result [ ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-default.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -38,11 +38,11 @@
     rdfs:comment "Copy the default graph to a non-existing graph" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-01.ru> ;
-                ut:data <copy-default.ttl> ;
+    mf:action [ ut:request :copy-01.ru ;
+                ut:data :copy-default.ttl ;
               ] ;
-    mf:result [ ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-default.ttl> ;
+    mf:result [ ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-default.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -51,17 +51,17 @@
     rdfs:comment "Copy a named graph to an existing graph" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-03.ru> ;
-                ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:action [ ut:request :copy-03.ru ;
+                ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <copy-02.ttl> ;
+                ut:graphData [ ut:graph :copy-02.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] ;
-    mf:result [ ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:result [ ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] .
 
@@ -70,15 +70,15 @@
     rdfs:comment "Copy a named graph to a non-existing graph" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-03.ru> ;
-                ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:action [ ut:request :copy-03.ru ;
+                ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:result [ ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ] ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g2" ]
               ] .
 
@@ -87,13 +87,13 @@
     rdfs:comment "Copy an existing graph to the default graph" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-06.ru> ;
-                ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:action [ ut:request :copy-06.ru ;
+                ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <copy-01.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:result [ ut:data :copy-01.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .
 
@@ -102,12 +102,12 @@
     rdfs:comment "Copy a graph to itself" ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2012-05-22#resolution_2> ;
-    mf:action [ ut:request <copy-07.ru> ;
-                ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:action [ ut:request :copy-07.ru ;
+                ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] ;
-    mf:result [ ut:data <copy-default.ttl> ;
-                ut:graphData [ ut:graph <copy-01.ttl> ;
+    mf:result [ ut:data :copy-default.ttl ;
+                ut:graphData [ ut:graph :copy-01.ttl ;
                                rdfs:label "http://example.org/g1" ]
               ] .

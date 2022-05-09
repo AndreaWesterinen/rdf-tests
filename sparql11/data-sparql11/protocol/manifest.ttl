@@ -100,7 +100,7 @@
     Content-Type: application/sparql-query
     Content-Length: XXX
 
-    ASK { <http://kasei.us/2009/09/sparql/data/data1.rdf> ?p ?o . <http://kasei.us/2009/09/sparql/data/data2.rdf> ?p ?o }
+    ASK { :http://kasei.us/2009/09/sparql/data/data1.rdf ?p ?o . :http://kasei.us/2009/09/sparql/data/data2.rdf ?p ?o }
     
 #### Response
 
@@ -192,7 +192,7 @@
     Content-Type: application/sparql-query
     Content-Length: XXX
 
-    ASK FROM <http://kasei.us/2009/09/sparql/data/data1.rdf> { <data1.rdf> ?p ?o }
+    ASK FROM :http://kasei.us/2009/09/sparql/data/data1.rdf { :data1.rdf ?p ?o }
     
 #### Response
 
@@ -326,8 +326,8 @@
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf {
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document
         }
     } ;
     INSERT {
@@ -356,7 +356,7 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource>
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource
         }
     }
 
@@ -386,9 +386,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
@@ -416,12 +416,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf a :http://purl.org/dc/terms/BibliographicResource .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-graphs-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+                :http://kasei.us/2009/09/sparql/data/data3.rdf a :http://purl.org/dc/terms/BibliographicResource .
             }
         }
     }
@@ -452,9 +452,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
@@ -484,12 +484,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf a :http://purl.org/dc/terms/BibliographicResource .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf a :http://purl.org/dc/terms/BibliographicResource .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-named-graphs-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> a <http://purl.org/dc/terms/BibliographicResource> .
+                :http://kasei.us/2009/09/sparql/data/data3.rdf a :http://purl.org/dc/terms/BibliographicResource .
             }
         }
     }
@@ -520,9 +520,9 @@ followed by
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     CLEAR ALL ;
     INSERT DATA {
-        GRAPH <http://kasei.us/2009/09/sparql/data/data1.rdf> { <http://kasei.us/2009/09/sparql/data/data1.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data2.rdf> { <http://kasei.us/2009/09/sparql/data/data2.rdf> a foaf:Document }
-        GRAPH <http://kasei.us/2009/09/sparql/data/data3.rdf> { <http://kasei.us/2009/09/sparql/data/data3.rdf> a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data1.rdf { :http://kasei.us/2009/09/sparql/data/data1.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data2.rdf { :http://kasei.us/2009/09/sparql/data/data2.rdf a foaf:Document }
+        GRAPH :http://kasei.us/2009/09/sparql/data/data3.rdf { :http://kasei.us/2009/09/sparql/data/data3.rdf a foaf:Document }
     } ;
     INSERT {
         GRAPH <http://example.org/protocol-update-dataset-full-test/> {
@@ -558,12 +558,12 @@ followed by
 
     ASK {
         GRAPH <http://example.org/protocol-update-dataset-full-test/> {
-            <http://kasei.us/2009/09/sparql/data/data1.rdf> <http://example.org/in> "default" .
-            <http://kasei.us/2009/09/sparql/data/data2.rdf> <http://example.org/in> <http://kasei.us/2009/09/sparql/data/data2.rdf> .
+            :http://kasei.us/2009/09/sparql/data/data1.rdf :http://example.org/in "default" .
+            :http://kasei.us/2009/09/sparql/data/data2.rdf :http://example.org/in :http://kasei.us/2009/09/sparql/data/data2.rdf .
         }
         FILTER NOT EXISTS {
             GRAPH <http://example.org/protocol-update-dataset-full-test/> {
-                <http://kasei.us/2009/09/sparql/data/data3.rdf> ?p ?o
+                :http://kasei.us/2009/09/sparql/data/data3.rdf ?p ?o
             }
         }
     }

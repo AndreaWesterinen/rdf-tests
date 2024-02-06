@@ -168,20 +168,46 @@ em.rfc2119 {
 <title>Tests and Implementation reports for RDF and SPARQL</title>
 </head>
 <body>
-<h1>RDF Test Curation</h1>
+<h1>RDF and SPARQL Test Suites</h1>
 
 <p>Product of W3C’s <a href="https://www.w3.org/community/rdf-tests/">RDF Test Curation Community Group</a>. Please consult that page for further details on the goals and deliverables of the that group.</p>
 
 <p>Current test suites:</p>
 
 <ul>
-	<li><a href="nquads/">N-Quads tests</a> (<a href="nquads/reports/">implementation report</a>)</li>
-	<li><a href="ntriples/">N-Triples tests</a> (<a href="ntriples/reports/">implementation report</a>)</li>
-	<li><a href="rdf-mt/">RDF Schema and Semantics tests</a> (<a href="rdf-mt/reports/">implementation report</a>)</li>
-	<li><a href="rdf-xml/">RDF/XML Syntax tests</a> (<a href="rdf-xml/reports/">implementation report</a>)</li>
-	<li><a href="sparql11/">SPARQL1.1 tests</a> (<a href="sparql11/reports/">implementation report</a>)</li>
-	<li><a href="trig/">RDF/XML Syntax tests</a> (<a href="trig/reports/">implementation report</a>)</li>
-	<li><a href="turtle/">Turtle tests</a> (<a href="turtle/reports/">implementation report</a>)</li>
+  <li><a href="rdf/">RDF tests</a>
+    <ul>
+      <li><a href="rdf/rdf12/">RDF 1.2</a>
+        <ul>
+          <li><a href="rdf/rdf12/rdf-n-triples">N-Triples tests</a> (includes 1.1 tests)</li>
+          <li><a href="rdf/rdf12/rdf-n-quads">N-Quads tests</a> (includes 1.1 tests)</li>
+          <li><a href="rdf/rdf12/rdf-semantics">Semantics tests</a></li>
+          <li><a href="rdf/rdf12/rdf-turtle">Turtle tests</a> (includes 1.1 tests)</li>
+          <li><a href="rdf/rdf12/rdf-trig">TriG tests</a> (includes 1.1 tests)</li>
+        </ul>
+      </li>
+      <li><a href="rdf/rdf11/">RDF 1.1 tests</a>
+        <ul>
+          <li><a href="rdf/rdf11/rdf-n-quads/">N-Quads tests</a> (<a href="rdf/rdf11/rdf-n-quads/reports/">implementation report</a>)</li>
+          <li><a href="rdf/rdf11/rdf-n-triples/">N-Triples tests</a> (<a href="rdf/rdf11/rdf-n-triples/reports/">implementation report</a>)</li>
+          <li><a href="rdf/rdf11/rdf-mt/">RDF Schema and Semantics tests</a> (<a href="rdf/rdf11/rdf-mt/reports/">implementation report</a>)</li>
+          <li><a href="rdf/rdf11/rdf-xml/">RDF/XML Syntax tests</a> (<a href="rdf/rdf11/rdf-xml/reports/">implementation report</a>)</li>
+          <li><a href="rdf/rdf11/rdf-trig/">TriG Syntax tests</a> (<a href="rdf/rdf11/rdf-trig/reports/">implementation report</a>)</li>
+          <li><a href="rdf/rdf11/rdf-turtle/">Turtle tests</a> (<a href="rdf/rdf11/rdf-turtle/reports/">implementation report</a>)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+	<li><a href="sparql">SPARQL tests</a>
+    <ul>
+      <li><a href="sparql/sparql12">SPARQL 1.2 tests</a></li>
+      <li><a href="sparql/sparql11">SPARQL 1.1 tests</a>
+        (<a href="sparql/reports/">SPARQL 1.1 implementation report</a>)
+      </li>
+      <li>
+        <a href="sparql/sparql10">SPARQL 1.0 tests</a>
+      </li>
+    </ul>
 </ul>
 
 <p>
@@ -201,6 +227,6 @@ Note that naming conventions for tests often make conflicting overlaps inevitabl
 <li>Implementations can typically access a given test suite using the <a href="https://w3c.github.io/rdf-tests/" target="_blank" rel="external nofollow">HTML view</a>. For example, the Turtle test manifest can be accessed at  <a href="https://w3c.github.io/rdf-tests/turtle/manifest.ttl" rel="external nofollow">https://w3c.github.io/rdf-tests/turtle/manifest.ttl</a>. Accessing test suites though an alternative branch via HTTP requires the use of a different facility, such as <a href="https://raw.githubusercontent.com/w3c/rdf-tests/main/turtle/manifest.ttl" target="_blank" rel="external nofollow">https://raw.githubusercontent.com/w3c/rdf-tests/main/turtle/manifest.ttl</a>, where &#8220;main&#8221; is replaced by the appropriate branch name.</li>
 </ul>
 
-<p>The group is chaired by <a href="http://greggkellogg.net/foaf#me">Gregg Kellogg</a>. The W3C staff contact is xxx. If you are member of the Community Group, and you want to gain a “push” right to this repository, please contact <a href="mailto:gregg@greggkellogg.net">gregg@greggkellogg.net</a>, providing your github ID.</p>
+<p>The group is chaired by <a href="http://greggkellogg.net/foaf#me">Gregg Kellogg</a>. The W3C staff contact is <a href="https://www.w3.org/2011/rdf-wg/wiki/User:Pchampin">Pierre-Antoine Champin</a>. If you are member of the Community Group, and you want to gain a “push” right to this repository, please contact <a href="mailto:gregg@greggkellogg.net">gregg@greggkellogg.net</a>, providing your github ID.</p>
 </body>
 </html>

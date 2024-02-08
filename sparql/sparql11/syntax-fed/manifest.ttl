@@ -26,7 +26,8 @@
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
             qt:data     :data01endpoint.ttl
-        ] ;.
+        ] 
+    ] ;.
 
 :test_2 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -38,7 +39,8 @@
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
             qt:data     :data01endpoint.ttl
-        ] ;.
+        ] 
+    ] ;.
 
 :test_3 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -50,6 +52,7 @@
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
             qt:data     :data01endpoint.ttl
-        ] ;.
+        ] 
+    ] ;.
 
 

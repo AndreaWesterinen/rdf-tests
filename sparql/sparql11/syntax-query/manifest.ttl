@@ -344,7 +344,8 @@
    mf:name    "syntax-bind-02.rq" ;
    mf:action  :syntax-bind-02.rq ;.
 
-:test_41 rdf:type   mf:PositiveSyntaxTest11 ;
+# Was 'PositiveSyntaxTest' but a query accept type of CSV, etc. is not valid for CONSTRUCT
+:test_41 rdf:type   mf:NegativeSyntaxTest11 ;    
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-construct-where-01.rq" ;
@@ -353,7 +354,8 @@
               qt:data   :data.ttl> ] ;.
    # mf:action  :syntax-construct-where-01.rq ;.
 
-:test_42 rdf:type   mf:PositiveSyntaxTest11 ;
+# Was 'PositiveSyntaxTest' but a query accept type of CSV, etc. is not valid for CONSTRUCT
+:test_42 rdf:type   mf:NegativeyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-construct-where-02.rq" ;

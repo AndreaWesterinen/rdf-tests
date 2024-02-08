@@ -20,18 +20,36 @@
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-service-01.rq" ;
-   mf:action  :syntax-service-01.rq ;.
+   mf:action [
+        qt:query  :syntax-service-01.rq ;
+        qt:data   :data01.ttl ;
+        qt:serviceData [
+            qt:endpoint <http://example.org/sparql> ;
+            qt:data     :data01endpoint.ttl
+        ] ;.
 
 :test_2 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-service-02.rq" ;
-   mf:action  :syntax-service-02.rq ;.
+   mf:action [
+        qt:query  :syntax-service-02.rq ;
+        qt:data   :data01.ttl ;
+        qt:serviceData [
+            qt:endpoint <http://example.org/sparql> ;
+            qt:data     :data01endpoint.ttl
+        ] ;.
 
 :test_3 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-service-03.rq" ;
-   mf:action  :syntax-service-03.rq ;.
+   mf:action [
+        qt:query  :syntax-service-03.rq ;
+        qt:data   :data01.ttl ;
+        qt:serviceData [
+            qt:endpoint <http://example.org/sparql> ;
+            qt:data     :data01endpoint.ttl
+        ] ;.
 
 

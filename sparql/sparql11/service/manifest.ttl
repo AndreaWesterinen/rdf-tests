@@ -5,6 +5,7 @@
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:  <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
 @prefix sd:     <http://www.w3.org/ns/sparql-service-description#> .
+@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/service/>
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "SPARQL Service" ;
@@ -93,7 +94,7 @@
        mf:feature sd:BasicFederatedQuery ;
        mf:action [
                qt:query  :service05.rq ;
-               qt:data   :data05.ttl ;
+               qt:data   local:data05.ttl ;
                qt:serviceData [
                        qt:endpoint <http://example1.org/sparql> ;
                        qt:data     :data05endpoint1.ttl

@@ -1,3 +1,2 @@
 PREFIX : <http://example/>
-SELECT (abs(?x +?y) AS ?F) ?z {}
-# SELECT (:function(?x +?y) AS ?F) ?z {}
+SELECT (:function(?x +?y) AS ?F) ?z {} 

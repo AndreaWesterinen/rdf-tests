@@ -1,5 +1,5 @@
-PREFIX : <http://example.org/>
+PREFIX : <http://www.w3.org/2009/sparql/docs/tests/data-sparql11/construct/manifest#> 
 
 CONSTRUCT 
-FROM <data.ttl>
+FROM :data.ttl
 WHERE { ?s ?p ?o }

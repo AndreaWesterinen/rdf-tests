@@ -58,7 +58,9 @@
     mf:action
          [ qt:query  :constructwhere04.rq ;
            qt:graphData :data.ttl ] ;
-    mf:result  :constructwhere04result.ttl
+    mf:result  
+         [ qt:graph :constructwhere04result.ttl ;
+           qt:graphData :data.ttl ] 
     .
 
 :constructwhere05 rdf:type mf:NegativeSyntaxTest11 ;

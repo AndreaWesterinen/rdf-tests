@@ -4,6 +4,7 @@
 @prefix mf:     <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:   <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/service/> .
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "Property Path" ;
@@ -80,7 +81,7 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
          [ qt:query  :pp06.rq ;
-           qt:graphData   :pp061.ttl,  :pp062.ttl] ;
+           qt:graphData :pp061.ttl, :pp062.ttl ] ;
     mf:result  :pp06.srx
     .   
         
@@ -90,7 +91,7 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-03-29#resolution_3> ;
     mf:action
          [ qt:query  :pp06.rq ;
-           qt:graphData   :pp07.ttl] ;
+           qt:graphData  :pp07.ttl ] ;
     mf:result  :pp07.srx 
     .
     
@@ -250,24 +251,32 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
     mf:name    "(pp34) Named Graph 1" ;
     mf:action
-        [ qt:query  :path-ng-01.rq ;
-          qt:graphData   :ng-01.ttl ;
-          qt:graphData   :ng-02.ttl ;
-          qt:graphData   :ng-03.ttl ] ;
-    mf:result  :path-ng-01.srx
+        [ qt:query  local:path-ng-01.rq ;
+          qt:graphData  [ qt:graph :ng-01.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ;
+          qt:graphData  [ qt:graph :ng-02.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ;
+          qt:graphData  [ qt:graph :ng-03.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ] ;
+    mf:result  local:path-ng-01.srx
     .
+# ARW: Results incorrect and named graph must follow IRI naming scheme
 
 :pp35  rdf:type mf:QueryEvaluationTest ;
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
     mf:name    "(pp35) Named Graph 2" ;
     mf:action
-        [ qt:query  :path-ng-02.rq ;
-          qt:graphData   :ng-01.ttl ;
-          qt:graphData   :ng-02.ttl ;
-          qt:graphData   :ng-03.ttl ] ;
-    mf:result  :path-ng-01.srx
+        [ qt:query  local:path-ng-02.rq ;
+          qt:graphData  [ qt:graph :ng-01.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ;
+          qt:graphData  [ qt:graph :ng-02.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ;
+          qt:graphData  [ qt:graph :ng-03.ttl ;
+                          rdfs:label "urn:ng-01.ttl" ] ] ;
+    mf:result  local:path-ng-01.srx
     .
+# ARW: Results incorrect and named graph must follow IRI naming scheme
 
 :pp36  rdf:type mf:QueryEvaluationTest ;
     dawgt:approval dawgt:Approved ;

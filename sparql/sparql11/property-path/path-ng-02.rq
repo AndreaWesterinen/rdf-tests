@@ -3,5 +3,5 @@ select ?t
 where {
   GRAPH ?g {
     ?s :p1* ?t }
-  FILTER (?g = <ng-01.ttl>)
+  FILTER (?g = <urn:ng-01.ttl>)
 }

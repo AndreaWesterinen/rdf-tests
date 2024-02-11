@@ -5,7 +5,6 @@
 @prefix mfx:    <http://jena.hpl.hp.com/2005/05/test-manifest-extra#> .
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:  <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
-@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/syntax-fed/> .
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "Syntax Federation" ;
@@ -26,10 +25,10 @@
         qt:data   :data01.ttl ;
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
-            qt:data     local:data01endpoint.ttl
+            qt:data     :data01endpoint.ttl
         ] 
     ] ;.
-   # mf:action  :syntax-service-01.rq ;. More needed since data needs to be loaded to the remote service
+   # ARW: mf:action  :syntax-service-01.rq ;. Data needs to be loaded to the remote service
 
 :test_2 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -40,10 +39,10 @@
         qt:data   :data01.ttl ;
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
-            qt:data     local:data01endpoint.ttl
+            qt:data     :data01endpoint.ttl
         ] 
     ] ;.
-   # mf:action  :syntax-service-02.rq ;. More needed since data needs to be loaded to the remote service
+   # ARW: mf:action  :syntax-service-02.rq ;. Data needs to be loaded to the remote service
 
 :test_3 rdf:type   mf:PositiveSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -54,9 +53,9 @@
         qt:data   :data01.ttl ;
         qt:serviceData [
             qt:endpoint <http://example.org/sparql> ;
-            qt:data     local:data01endpoint.ttl
+            qt:data     :data01endpoint.ttl
         ] 
     ] ;.
-   # mf:action  :syntax-service-03.rq ;. More needed since data needs to be loaded to the remote service
+   # ARW: mf:action  :syntax-service-03.rq ;. Data needs to be loaded to the remote service
 
 

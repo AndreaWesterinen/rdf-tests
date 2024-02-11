@@ -104,7 +104,7 @@
                        qt:data     :data05endpoint2.ttl
                ] 
        ] ;
-       mf:result  :service05.srx .  
+       mf:result  local:service05.srx .  
        
 :service6 rdf:type mf:QueryEvaluationTest ;
        mf:name    "SERVICE test 6" ;

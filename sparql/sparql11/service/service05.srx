@@ -10,7 +10,7 @@
       <binding name="title"><literal>Query remote RDF Data</literal></binding>
     </result>
     <result>
-      <binding name="service"><uri>http://example1.org/sparql</uri></binding>
+      <binding name="service"><uri>http://localhost:5820/example1/query</uri></binding>
       <binding name="title"><literal>Query multiple SPARQL endpoints</literal></binding>
     </result>
     <result>

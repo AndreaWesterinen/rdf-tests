@@ -4,6 +4,7 @@
 @prefix mf:     <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:   <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/service/> .
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "CONSTRUCT" ;
@@ -50,18 +51,19 @@
            qt:data   :data.ttl ] ;
     mf:result  :constructwhere03result.ttl
     .
+
 :constructwhere04 rdf:type mf:QueryEvaluationTest ;
     mf:name    "constructwhere04 - CONSTRUCT WHERE" ;
     rdfs:comment "CONSTRUCT WHERE  with DatasetClause";
     dawgt:approval dawgt:Approved ;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-02-01#resolution_3> ;
     mf:action
-         [ qt:query  :constructwhere04.rq ;
-           qt:graphData :data.ttl ] ;
-    mf:result  
-         [ qt:graph :constructwhere04result.ttl ;
-           qt:graphData :data.ttl ] 
+        [ qt:query  local:constructwhere04.rq ;
+          qt:graphData [ qt:graph :data.ttl ;
+                         rdfs:label "urn:data.ttl" ] ] ;
+    mf:result :constructwhere04result.ttl 
     .
+# ARW: A named graph must be an IRI with the appropriate format, scheme:xxx
 
 :constructwhere05 rdf:type mf:NegativeSyntaxTest11 ;
     mf:name    "constructwhere05 - CONSTRUCT WHERE" ;

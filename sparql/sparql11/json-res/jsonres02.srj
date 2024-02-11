@@ -34,7 +34,7 @@
       {
         "s": { "type": "uri" , "value": "http://example.org/s6" } ,
         "p": { "type": "uri" , "value": "http://example.org/p6" } ,
-        "o": { "type": "bnode" , "value": "b0" }
+        "o": { "type": "bnode" , "value": "o6" }
       }
     ]
   }

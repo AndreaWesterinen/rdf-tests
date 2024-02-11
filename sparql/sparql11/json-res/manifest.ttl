@@ -24,7 +24,7 @@
     mf:action
          [ qt:query  :jsonres01.rq ;
            qt:data   :data.ttl ] ;
-    mf:result  :jsonres01.srj
+    mf:result  local:jsonres01.srj
     .
 
 :jsonres02 rdf:type mf:QueryEvaluationTest ;

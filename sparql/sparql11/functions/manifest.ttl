@@ -605,6 +605,7 @@
            qt:data   :data.ttl ] ;
     mf:result  :bnode01.srx ;
     .
+# ARW: Why is a blank node name mandated in the response?
 
 :in01 rdf:type mf:QueryEvaluationTest ;
     mf:name    "IN 1" ;

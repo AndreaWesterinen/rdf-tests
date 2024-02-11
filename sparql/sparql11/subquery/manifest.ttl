@@ -4,6 +4,7 @@
 @prefix mf:     <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:   <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/subquery/> .
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "Sub query" ;
@@ -43,18 +44,21 @@
     mf:action
          [ qt:query  :sq02.rq ;
            qt:graphData   :sq01.rdf ] ;
-    mf:result  :sq02.srx
+    mf:result  local:sq02.srx
     .
+# ARW: There should be no result since the query is "graph ?g {{select * where {?x ?p ?g}}"
+# There is no match of the graph and the object reference
  
  :subquery03 rdf:type mf:QueryEvaluationTest ;
     mf:name    "sq03 - Subquery within graph pattern, graph variable is not bound" ;
     dawgt:approval dawgt:Approved;
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-07-13#resolution_4> ;
     mf:action
-         [ qt:query  :sq03.rq ;
+         [ qt:query  local:sq03.rq ;
            qt:graphData   :sq01.rdf ] ;
     mf:result  :sq03.srx
     .
+# ARW: Same problem as subquer02 - fixed the request instead of the result
     
   :subquery04 rdf:type mf:QueryEvaluationTest ;
     mf:name    "sq04 - Subquery within graph pattern, default graph does not apply" ;

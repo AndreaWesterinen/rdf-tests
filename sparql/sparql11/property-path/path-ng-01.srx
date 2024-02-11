@@ -4,13 +4,13 @@
 </head>
 <results>
 <result>
+<binding name='t'><uri>http://www.example.org/a</uri></binding>
+</result>
+<result>
 <binding name='t'><uri>http://www.example.org/b</uri></binding>
 </result>
 <result>
-<binding name='t'><uri>http://www.example.org/c</uri></binding>
-</result>
-<result>
-<binding name='t'><uri>http://www.example.org/d</uri></binding>
+<binding name='t'><uri>http://www.example.org/b</uri></binding>
 </result>
 </results>
 </sparql>

@@ -255,10 +255,10 @@
           qt:graphData  [ qt:graph :ng-01.ttl ;
                           rdfs:label "urn:ng-01.ttl" ] ;
           qt:graphData  [ qt:graph :ng-02.ttl ;
-                          rdfs:label "urn:ng-01.ttl" ] ;
+                          rdfs:label "urn:ng-02.ttl" ] ;
           qt:graphData  [ qt:graph :ng-03.ttl ;
-                          rdfs:label "urn:ng-01.ttl" ] ] ;
-    mf:result  local:path-ng-01.srx
+                          rdfs:label "urn:ng-03.ttl" ] ] ;
+    mf:result  :path-ng-01.srx
     .
 # ARW: Results incorrect and named graph must follow IRI naming scheme
 
@@ -271,10 +271,10 @@
           qt:graphData  [ qt:graph :ng-01.ttl ;
                           rdfs:label "urn:ng-01.ttl" ] ;
           qt:graphData  [ qt:graph :ng-02.ttl ;
-                          rdfs:label "urn:ng-01.ttl" ] ;
-          qt:graphData  [ qt:graph :ng-03.ttl ;
-                          rdfs:label "urn:ng-01.ttl" ] ] ;
-    mf:result  local:path-ng-01.srx
+                          rdfs:label "urn:ng-02.ttl" ] ;
+          qt:graphData  [ qt:graph :ng-03.ttl 
+                          rdfs:label "urn:ng-03.ttl" ] ] ;
+    mf:result  :path-ng-01.srx
     .
 # ARW: Results incorrect and named graph must follow IRI naming scheme
 

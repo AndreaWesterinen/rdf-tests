@@ -3,6 +3,6 @@ prefix in:	<http://www.example.org/instance#>
 
 select ?x where {
 graph ?g {
-  {select ?x where {?x ?p ?g}}
+  {select ?x where {?x ?p ?y}}
 }
 }

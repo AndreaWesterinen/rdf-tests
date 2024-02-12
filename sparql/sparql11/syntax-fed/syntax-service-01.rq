@@ -1,1 +1,1 @@
-SELECT * { SERVICE <g> { ?s ?p ?o } }
+SELECT * { SERVICE <http://example.org/sparql> { ?s ?p ?o } }

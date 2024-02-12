@@ -1,2 +1,2 @@
 INSERT 
-DATA {  GRAPH <G>{} }
+DATA {  GRAPH <urn:G> {} }

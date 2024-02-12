@@ -1,1 +1,1 @@
-DROP GRAPH <graph>
+DROP GRAPH <urn:graph>

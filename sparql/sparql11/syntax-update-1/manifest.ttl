@@ -5,6 +5,7 @@
 @prefix mfx:    <http://jena.hpl.hp.com/2005/05/test-manifest-extra#> .
 @prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
 @prefix dawgt:  <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix local:  <http://localhost:8000/tests/rdf-tests/sparql/sparql11/syntax-update-1/> .
 
 <>  rdf:type mf:Manifest ;
     rdfs:label "Syntax Update 1" ;
@@ -114,7 +115,7 @@
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-update-08.ru" ;
-   mf:action  :syntax-update-08.ru ;.
+   mf:action  local:syntax-update-08.ru ;.
 
 :test_9 rdf:type   mf:PositiveUpdateSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -174,7 +175,7 @@
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-update-18.ru" ;
-   mf:action  :syntax-update-18.ru ;.
+   mf:action  local:syntax-update-18.ru ;.
 
 :test_19 rdf:type   mf:PositiveUpdateSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;
@@ -234,7 +235,7 @@
    dawgt:approval dawgt:Approved ;
    dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2011-04-05#resolution_2> ;
    mf:name    "syntax-update-28.ru" ;
-   mf:action  :syntax-update-28.ru ;.
+   mf:action  local:syntax-update-28.ru ;.
 
 :test_29 rdf:type   mf:PositiveUpdateSyntaxTest11 ;
    dawgt:approval dawgt:Approved ;

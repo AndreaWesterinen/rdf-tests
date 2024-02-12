@@ -1,1 +1,1 @@
-CLEAR GRAPH <graph>
+CLEAR GRAPH <urn:graph>

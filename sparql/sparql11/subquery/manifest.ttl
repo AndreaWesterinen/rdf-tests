@@ -43,11 +43,11 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-07-13#resolution_3> ;
     mf:action
          [ qt:query  :sq02.rq ;
-           qt:graphData   :sq01.rdf ] ;
+           qt:graphData  [ qt:graph :sq01.rdf ;
+                           rdfs:label "http://www.example.org/instance#b" ] ] ;
     mf:result  local:sq02.srx
     .
-# ARW: There should be no result since the query is "graph ?g {{select * where {?x ?p ?g}}"
-# There is no match of the graph and the object reference
+# ARW: Placed graph into "instance#b", so the match is for instance#a
  
  :subquery03 rdf:type mf:QueryEvaluationTest ;
     mf:name    "sq03 - Subquery within graph pattern, graph variable is not bound" ;
@@ -55,10 +55,11 @@
     dawgt:approvedBy <http://www.w3.org/2009/sparql/meeting/2010-07-13#resolution_4> ;
     mf:action
          [ qt:query  local:sq03.rq ;
-           qt:graphData   :sq01.rdf ] ;
+           qt:graphData  [ qt:graph :sq01.rdf ;
+                           rdfs:label "http://www.example.org/instance#b" ] ] ;
     mf:result  :sq03.srx
     .
-# ARW: Same problem as subquer02 - fixed the request instead of the result
+# ARW: Modified the query so that the graph variable does not bind the results
     
   :subquery04 rdf:type mf:QueryEvaluationTest ;
     mf:name    "sq04 - Subquery within graph pattern, default graph does not apply" ;
